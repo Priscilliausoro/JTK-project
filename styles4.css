@@ -1,0 +1,363 @@
+.title {
+    font-size: 115px;
+}
+
+.background {
+    height: 40vh;
+}
+
+.emptybox2 {
+    border: 5px solid #DA2128;
+    position: absolute;
+    left: 970px;
+    top: 570px;
+    bottom: 200px;
+    width: 627px;
+    height: 65%;
+    border-radius: 2px;
+    background-color: #DA2128;
+    color: whitesmoke;
+
+
+
+}
+
+.emptybox2 h1 {
+    font-size: 70px;
+    padding: 25px 35px;
+}
+
+.emptybox2 p {
+    font-size: 20px;
+    /* padding: 23px 35px; */
+}
+
+.emptybox2 i {
+    padding-right: 500px;
+    font-size: 50px;
+}
+
+.line1 {
+    border: 5px soild whitesmoke;
+
+}
+
+.para2,
+.para3 {
+    padding: 5px 35px;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 35px;
+
+}
+
+.para {
+    margin-left: 400px;
+    font-size: 20px;
+    padding-top: 15px;
+    max-width: 500px;
+    padding-top: 190px;
+}
+
+
+
+.title {
+    background-color: white;
+    padding-right: 550px;
+    padding-bottom: 100px;
+    padding-left: 15px;
+
+
+
+
+}
+
+.img1 {
+    margin-top: 400px;
+    align-items: center;
+    position: relative;
+    left: 300px;
+    width: 70%;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.content2 {
+    max-width: 900px;
+    border: 1px solid lightgray;
+    border: none;
+    border-radius: 10px;
+    /* background: linear-gradient(to right, rgb(235, 220, 220), rgb(189, 216, 225)); */
+    padding: 30px 15px;
+    margin: 10px 10px;
+    margin-left: 190px;
+    margin-right: 10px;
+
+    height: 25vh;
+}
+
+.content2:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #000;
+}
+
+.content2 h2,
+.content2 p {
+    text-align: left;
+}
+
+.content2 p {
+    max-width: 700px;
+}
+
+
+
+
+.emptyline {
+    border: 2px solid red;
+    margin-right: 500px;
+}
+
+@media all and (max-width: 768px) {
+    .background{
+        width: auto;
+    }
+    .emptybox2 {
+        left: 20px;
+        /* Adjust left positioning for smaller screens */
+        right: 20px;
+        /* Optional: Adjust right positioning for smaller screens */
+        width: auto;
+        /* Allow the width to be determined by content */
+        height: auto;
+        /* Allow the height to be determined by content */
+        top: 700px;
+        /* Adjust top positioning for smaller screens */
+        bottom: 50px;
+        /* Optional: Adjust bottom positioning for smaller screens */
+        padding: 15px;
+        padding-bottom: 800px;
+        /* Adjust padding for smaller screens */
+    }
+
+   
+
+    .img1 {
+        margin-top:930px;
+        /* Adjust margin-top for smaller screens */
+        width: 100%;
+        /* Make the image responsive to the container */
+        left: 10px;
+        height: 30vh;
+        max-height: 1200px;
+    }
+
+    .content1 {
+        flex-direction: column;
+        /* Change to vertical layout on smaller screens */
+    }
+    .title, .para, .line{
+        margin: auto;
+    }
+    .line{
+        padding-top: 10px;
+        margin-right: 300px;
+    }
+
+    .content2 {
+        margin-left: 0;
+        /* Remove left margin for content2 on smaller screens */
+        margin-right: 0;
+        /* Remove right margin for content2 on smaller screens */
+        width: 100%;
+        /* Make content2 occupy full width on smaller screens */
+        max-width: 1200px;
+        /* Remove max-width on smaller screens */
+        margin-bottom: 20px;
+        /* Optional: Add margin-bottom for spacing between content2 items */
+        height: auto;
+        /* Allow content2 height to be determined by content */
+    }
+
+    .emptyline {
+        padding-right: 100px;
+    }
+
+    .content2:hover {
+        transform: (1.1);
+        /* Remove hover effect scale transform on smaller screens */
+        box-shadow: none;
+        /* Remove box-shadow on smaller screens */
+    }
+}
+@media all and (min-width:768px) and (max-width: 900px) {
+    .background{
+        max-width: 1200px;
+    }
+    .emptybox2 {
+        left: 20px;
+        /* Adjust left positioning for smaller screens */
+        right: 20px;
+        /* Optional: Adjust right positioning for smaller screens */
+        width: auto;
+        /* Allow the width to be determined by content */
+        height: auto;
+        /* Allow the height to be determined by content */
+        top: 700px;
+        /* Adjust top positioning for smaller screens */
+        bottom: 50px;
+        /* Optional: Adjust bottom positioning for smaller screens */
+        padding: 15px;
+        padding-bottom: 700px;
+        /* Adjust padding for smaller screens */
+    }
+
+   
+
+    .img1 {
+        margin-top:930px;
+        /* Adjust margin-top for smaller screens */
+        width: 100%;
+        /* Make the image responsive to the container */
+        left: 10px;
+        height: 30vh;
+    }
+
+    .content1 {
+      justify-content: space-evenly;
+      margin: auto;
+      margin-left: 200px;
+      flex-direction: column;
+
+
+
+        /* Change to vertical layout on smaller screens */
+    }
+    .title, .para, .line{
+        margin: auto;
+    }
+    .line{
+      margin-left: 100px;
+      margin-right: 600px;
+    }
+
+    .content2 {
+        margin-left: 0;
+        /* Remove left margin for content2 on smaller screens */
+        margin-right: 0;
+        /* Remove right margin for content2 on smaller screens */
+        width: 100%;
+        /* Make content2 occupy full width on smaller screens */
+        max-width: none;
+        /* Remove max-width on smaller screens */
+        margin-bottom: 0px;
+        /* Optional: Add margin-bottom for spacing between content2 items */
+        max-height: 20vh;
+     text-align: center;
+        /* Allow content2 height to be determined by content */
+    }
+
+    .emptyline {
+        padding-right: 100px;
+    }
+.content2 p{
+    font-size: 15px;
+    max-width: 390px;
+    text-align: justify;
+}
+    .content2:hover {
+        transform: (1.1);
+        /* Remove hover effect scale transform on smaller screens */
+        box-shadow: none;
+        /* Remove box-shadow on smaller screens */
+    }
+}
+@media all and (min-width:901px) and (max-width: 1300px) {
+    .background{
+        max-width: 1300px;
+    }
+    .emptybox2 {
+        left: 20px;
+        /* Adjust left positioning for smaller screens */
+        right: 20px;
+        /* Optional: Adjust right positioning for smaller screens */
+        width: auto;
+        /* Allow the width to be determined by content */
+        height: auto;
+        /* Allow the height to be determined by content */
+        top: 700px;
+        /* Adjust top positioning for smaller screens */
+        bottom: 50px;
+        /* Optional: Adjust bottom positioning for smaller screens */
+        padding: 15px;
+        padding-bottom: 700px;
+        /* Adjust padding for smaller screens */
+    }
+
+   
+
+    .img1 {
+        margin-top:930px;
+        /* Adjust margin-top for smaller screens */
+        width: 100%;
+        /* Make the image responsive to the container */
+        left: 10px;
+        height: 30vh;
+    }
+
+    .content1 {
+      justify-content: space-evenly;
+      margin: auto;
+      width: auto;
+      
+ 
+
+
+
+        /* Change to vertical layout on smaller screens */
+    }
+    .content3{
+        width: auto;
+    }
+    .title, .para, .line{
+        margin: auto;
+    }
+   .line{
+    margin-left: 250px;
+    margin-right: 700px;}
+
+    .content2 {
+        margin-left: 0;
+        /* Remove left margin for content2 on smaller screens */
+        margin-right: 0;
+        /* Remove right margin for content2 on smaller screens */
+        width: 100%;
+        /* Make content2 occupy full width on smaller screens */
+        max-width: none;
+        /* Remove max-width on smaller screens */
+        margin-bottom: 0px;
+        /* Optional: Add margin-bottom for spacing between content2 items */
+        max-height: 20vh;
+     text-align: center;
+        /* Allow content2 height to be determined by content */
+    }
+
+    .emptyline {
+        padding-right: 100px;
+    }
+.content2 p{
+    font-size: 15px;
+    max-width: 390px;
+    text-align: justify;
+}
+    .content2:hover {
+        transform: (1.1);
+        /* Remove hover effect scale transform on smaller screens */
+        box-shadow: none;
+        /* Remove box-shadow on smaller screens */
+    }
+}

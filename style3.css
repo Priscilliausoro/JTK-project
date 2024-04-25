@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.background {
+    /* background-image: url(istockphoto-1227234970-612x612.jpg); */
+    background: linear-gradient(to right, rgb(235, 220, 220), lightblue);
+
+    width: 100%;
+    height: 30vh;
+  
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.content img{
+    margin-right: 1500px;
+
+}
+   
+.line{
+    border-bottom: 5px solid red;
+    margin-left: 390px;
+    margin-right: 1410px;
+    margin-top: 15px;
+}
+
+.title {
+    text-align: left;
+    margin-left: 400px;
+    font-size: 80px;
+    max-width: 400px;
+    margin-top: 50px;
+    border: 2px soild white;
+}
+
+.para{
+    margin-left: 400px;
+    font-size: 20px;
+  padding-top: 15px;
+  max-width: 500px;
+ padding-top: 90px;
+}
+
+.para1{
+    margin-left: 400px;
+    font-size: 20px;
+  padding-top: 15px;
+  max-width: 500px;
+ padding-top: 90px;
+ margin-bottom: 220px;
+}
+
+.border{
+    border: 2px soild black;
+    position: relative;
+
+}
+.border1{
+    background: linear-gradient(to right, rgb(235, 220, 220), lightblue);
+   padding-bottom: 270px;
+
+}
+
+.border img{
+   position: absolute;
+   right: 300px;
+   top: 250px;
+   bottom: 200px;
+   width: 500px;
+   height: 65%;
+   border-radius: 12px;
+}
+ .emptybox{
+    border: 5px solid #DA2128;
+    position: absolute;
+   left: 1000px;
+    top: 200px;
+    bottom: 200px;
+    width: 200px;
+    height: 65%;
+    border-radius: 12px;
+    background-color: #DA2128;
+
+ 
+   
+ }
+ .line{
+    border-bottom: 5px solid red;
+    margin-left: 390px;
+    margin-right: 1410px;
+    margin-top: 15px;
+}
+.line2{
+    border-bottom: 5px solid red;
+
+}
+
+ .emptybox1{
+    border: 5px solid #DA2128;
+    position: absolute;
+   left: 1000px;
+    top: 1350px;
+    bottom: -200px;
+    width: 600px;
+    height: 63%;
+    border-radius: 5px;
+    background-color: #DA2128;
+
+    color: rgb(255, 255, 255);
+
+ }
+ .emptybox1 h1{
+    padding-left: 15px;
+    padding: 15px;
+    font-size: 25px;
+ }
+ .emptybox1 p{
+    font-size: 19px;
+    padding-left: 15px;
+ }
+ .emptybox1 i{
+    padding-right: 15px;
+ }
+ .aboutus{
+    margin-top: 190px;
+ }
+.about{
+    margin-top: 115px;
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+
+   
+}
+
+.about img{
+
+     width: 450px;
+     height: 50vh;
+     border-radius: 10px;
+
+} 
+
+.abouthead{
+    font-size: 90px;
+    text-align: right;
+    margin: 150px;
+}
+.aboutstatement{
+    font-size: 55px;
+    padding: 15px 0px;
+}
+.aboutpara{
+    font-size: 16px;
+  line-height: 1.5;
+  max-width: 500px;
+ word-spacing: 2px;
+   
+}
+@media screen and (max-width: 768px) {
+    .border img {
+        width:1000px; /* Change image width for responsiveness */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 12px;
+        top:600px
+    
+        
+    }
+    .para , .title , .para1{
+        margin: auto;
+    }
+    .para1{
+        margin-bottom: 350px;
+    }
+
+    .emptybox {
+        left: 50%; /* Center empty box */
+        transform: translateX(50%);
+        width: 100px;
+        height: 65%;
+        opacity: 0;
+    }
+.about{
+    flex-direction:column;
+}
+    .emptybox1 {
+        left: 50%; /* Center empty box */
+        transform: translateX(-50%);
+
+        width: auto;
+        height: 83%;
+    }
+
+    .about img {
+        width: 100%; /* Change image width for responsiveness */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    .abouthead {
+        font-size: 90px;
+        text-align: center; /* Center text */
+        margin: 150px auto; /* Center margin horizontally */
+    }
+
+    .aboutpara {
+        max-width: 100%; /* Adjust max width for responsiveness */
+        word-spacing: 2px;
+    }
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+    .border img,
+    .emptybox,
+    .emptybox1,
+    .about img,
+    .abouthead,
+    .aboutpara {
+        width: 100%; /* Make elements full width */
+        border-radius: 0; /* Remove border radius */
+        margin: 0; /* Remove margins */
+        padding: 0; /* Remove padding */
+        text-align: center; /* Center text */
+    }
+
+    .abouthead {
+        font-size: 60px; /* Decrease font size for smaller screens */
+        margin: 50px auto; /* Center margin horizontally */
+    }
+}
